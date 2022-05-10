@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+@media only screen and (max-width: 600px){
+    *{
+        box-sizing: border-box
+    }
+
+   
+    .q-links {
+        display: none;
+    }
+    .sidebars{
+        display: contents;
+        z-index: 10;
+    }
+    /* The sidebar menu */
+    .sidebar {
+        height: 100%; /* 100% Full-height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 10; /* Stay on top */
+        top: 0;
+        left: 0;
+        background-color: #111; /* Black*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 60px; /* Place content 60px from the top */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+        margin-top: 50px;
+    }
+    
+    /* The sidebar links */
+    .sidebar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    
+    /* When you mouse over the navigation links, change their color */
+    .sidebar a:hover {
+        color: #f1f1f1;
+    }
+    
+    /* Position and style the close button (top right corner) */
+    .sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    
+    /* The button used to open the sidebar */
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color:rgb(8, 216, 53) ;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        margin-left: -100px;
+    }
+    
+    
+    /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+    #main {
+        transition: margin-left .1s; /* If you want a transition effect */
+    
+    }
+    
+    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+    @media screen and (max-height: 450px) {
+        .sidebar {padding-top: 15px;}
+        .sidebar a {font-size: 18px;}
+    }
+    .menu-list{
+        display: none;
+    }
+    .carousel{
+        height: 30vh;
+    }
+    /* Slider Infor */
+    .slider-info{
+        position: absolute;
+        z-index: 5;
+        border: none;
+        font-size: 5px;
+        left: 35%;
+        top: 0;
+        color: rgba(255, 255, 255, .5);
+        cursor: pointer;
+        border-radius: 5px;
+        padding: 5px;
+        overflow: hidden;
+        -webkit-backface-visibility: hidden;
+        -webkit-perspective: 1000;
+        -webkit-transform: translate3d(0,0,0);
+        white-space:nowrap;
+        animation: showup 11s infinite;
+
+
+    }
+
+    .slider-info h1 {
+        font-size: 18px;
+
+    }
+
+
+
+    .slider-info p{
+        margin-top: -10px;
+        font-size: 10px;     
+    }
+
+    .slider-info button{
+        font-size: 10px;  
+    }
+    .brief-section {
+        height: 900px;
+        padding-top: 20px;
+        padding-left: 35px;
+
+        display: block;
+        
+    }
+    .menu-section{
+        position: relative;
+    }
+    .social-media {
+        margin-left: -90px;
+        
+    }
+    .why-news-section{
+        display: block;
+        padding-left: 10px;
+        padding-right: 10px;
+
+
+    }
+    .news{
+        padding-left: 10px;
+    }
+    .new-content{
+        display: block;
+    }
+    .content-footer{
+        display: flex;
+       
+    }
+    .event-section{
+        display: block;
+        position: relative;
+    }
+    .event-card {
+        display: none;
+    }
+        
+    .footer-banner {
+        padding: 150px 10px 15px 10px;
+        background-color: green;
+        color: #fff;
+    }
+
+    .upper {
+        font-size: 20px;
+        padding: 5px 20px;
+        
+    
+        border:1px #fff solid;
+        margin-left: 150px;
+        background-color: green;
+        cursor: pointer;
+        
+    }
+
+    .upper:hover{
+        background-color: #fff;
+        color: green;
+    }
+
+    .footer-banner hr{
+        margin-top: -15px;
+
+    }
+
+    .quick-links {
+        display: block;
+        text-align: center;
+
+        margin: 0;
+    }
+
+    .course {
+        margin: 0px;
+        
+    }
+
+    .course ul li{
+        list-style: none;
+    
+    }
+
+    .course ul li a {
+        color: rgb(211, 204, 204);
+        text-decoration: none;
+        line-height: 1.8;
+        padding-left: 10px;
+        
+        
+    }
+    .course ul li a:hover{
+        color: #fff;
+    }
+
+
+    .contact {
+        margin: 50px 15px;
+        border: 1px #fff solid;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .contact p{
+        text-decoration: none;
+        display: block;
+        line-height: 0.1;
+        color: rgb(211, 204, 204);
+        font-size: 18px;
+    }
+
+    .contact p i{
+        padding-right: 10px;
+    }
+
+    .top {
+        font-size: 20px;
+        padding: 10px;
+        border:1px #fff solid;
+        margin-left: 200px;
+        background-color: green;
+        cursor: pointer;
+        text-decoration: none;
+        color: #fff;
+        
+    }
+
+    .top:hover{
+        background-color: #fff;
+        color: green;
+    }
+
+    .footer-footer {
+        display: block;
+
+        margin: 50px 10px;
+        text-align: center;
+    }
+
+    .footer-icons ul{
+        display: flex;
+        margin-left: 90px;
+
+    }
+    .footer-icons ul li{
+        list-style: none;
+        padding: 10px;
+        border: 1px #eee solid;
+        margin: 5px;
+        cursor: pointer;
+
+    }
+
+    .footer-icons ul li:hover{
+        background-color: #fff;
+
+    }
+    .footer-icons ul li i{
+        color: #eee;
+    }
+
+    .footer-icons ul li i:hover{
+        color: black;
+    }
+
+    .developers p{
+        color: #eee;
+        font-size: 15px;
+        text-align: center;
+        margin-left: 0px;
+        padding-bottom: 5px;
+        
+    }
+
+}
